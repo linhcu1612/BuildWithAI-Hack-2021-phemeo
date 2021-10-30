@@ -1,0 +1,28 @@
+schema {
+    query: Query
+}
+
+type Patient {
+    id: ID!
+    name: String!
+    email: String!
+    phone_number: String!
+    created_at: String!
+}
+
+type PatientResult {
+    success: Boolean!
+    errors: [String]
+    patient: Patient
+}
+
+type PatientsResult {
+    success: Boolean!
+    errors: [String]
+    patients: [Patient]
+}
+
+type Query {
+    patients: PatientsResult!
+}
+
