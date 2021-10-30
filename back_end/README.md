@@ -10,6 +10,8 @@
   - for database testing
 - [wsl](https://docs.microsoft.com/en-us/windows/wsl/install)
   - nice to have, easier for windows user to set up project
+- [direnv](https://github.com/direnv/direnv)
+  - nice to have, manage environment variables
 
 ## Set up
 
