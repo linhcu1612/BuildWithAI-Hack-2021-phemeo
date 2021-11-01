@@ -2,27 +2,27 @@ schema {
     query: Query
 }
 
-type Patient {
-    id: ID!
+type Student {
     name: String!
-    email: String!
-    phone_number: String!
-    created_at: String!
+    public_transport: String!
+    gpa: Float!
+    on_time_submissions: Int!
+    coaching_classes: Int!
+    mental_status: String!
+    fast_internet: Int
+    positive_feedback: Int!
+    travel_time_median: Float!
+    attendance_good: Int!
+    attendance_normal:  Int!
+    attendance_poor: Int!
 }
 
-type PatientResult {
+type Students {
     success: Boolean!
     errors: [String]
-    patient: Patient
-}
-
-type PatientsResult {
-    success: Boolean!
-    errors: [String]
-    patients: [Patient]
+    students: [Student]!
 }
 
 type Query {
-    patients: PatientsResult!
+    Students(limit: Int): Students!
 }
-

@@ -10,6 +10,7 @@ graphql-core = "*"
 python-dotenv = "*"
 flask-cors = "*"
 flask-sqlalchemy = "*"
+pandas = "*"
 
 [dev-packages]
 
