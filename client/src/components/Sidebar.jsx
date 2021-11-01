@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const Sidebar = () => {
   let location = useLocation();
@@ -19,11 +20,16 @@ const Sidebar = () => {
     <div className='fixed z-30 inset-x-0 top-0'>
       <nav className='flex justify-between mt-3'>
         <Link className='' to='/'>
-          <h1
-            className='flex items-center mt-0 py-2 px-6'
-            style={{ fontSize: "24px", color: "rgb(232,246,228)" }}>
-            MHAS
-          </h1>
+          <img
+            src={logo}
+            alt=''
+            style={{
+              height: "65px",
+              width: "170px",
+              marginLeft: "25px",
+              marginTop: "10px",
+            }}
+          />
         </Link>
         <div className='flex justify-center'>
           <Link

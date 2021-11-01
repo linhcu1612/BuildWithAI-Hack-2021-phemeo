@@ -12,7 +12,11 @@ const Layout = (props) => {
 
       <div className='flex-1 flex flex-col overflow-hidden'>
         <main className='flex-1 overflow-x-hidden overflow-y-auto'>
-          <div className='container mx-auto px-0 py-16'>{props.children}</div>
+          <div
+            className='container mx-auto px-0 h-screen'
+            style={{ paddingTop: "120px" }}>
+            {props.children}
+          </div>
         </main>
       </div>
     </div>

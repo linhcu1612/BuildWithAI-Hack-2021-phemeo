@@ -3,6 +3,7 @@
 import "./App.css";
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import About from "./pages/About";
 import Layout from "./components/Layout";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -13,7 +14,9 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route path='/team_members'>{/* <About /> */}</Route>
+            <Route path='/about_us'>
+              <About />
+            </Route>
             <Route path='/dashboard'>
               <Dashboard />
             </Route>
