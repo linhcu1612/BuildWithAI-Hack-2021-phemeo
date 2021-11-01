@@ -8,6 +8,8 @@ import avatar_trang from "../assets/avatar/avatar_trang.png";
 import avatar_henry from "../assets/avatar/avatar_henry.png";
 import avatar_thien from "../assets/avatar/avatar_thien.jpeg";
 
+import classes from "./About.module.css";
+
 const data = [
   {
     id: 1,
@@ -68,14 +70,12 @@ const About = () => {
       <h1 style={{ textAlign: "center", color: "white", fontSize: "44px" }}>
         Phemeo Team
       </h1>
-      <div className='grid grid-cols-4 gap-3'>
+      <div className='grid grid-cols-4 gap-3 md:gap-2'>
         {data.slice(0, 4).map((member) => {
           return <Team key={member.id} {...member} />;
         })}
       </div>
-      <div
-        className='grid grid-cols-3'
-        style={{ marginLeft: "200px", marginRight: "200px" }}>
+      <div className={classes.smaller_col}>
         {data.slice(4).map((member) => {
           return <Team key={member.id} {...member} />;
         })}

@@ -1,0 +1,22 @@
+/** @format */
+
+.smaller_col {
+  display: grid;
+  margin-left: 200px;
+  margin-right: 200px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1500px) {
+  .smaller_col {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .smaller_col {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
