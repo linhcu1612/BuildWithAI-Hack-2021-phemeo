@@ -12,7 +12,7 @@ import { createClient, Provider } from "urql";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const client = createClient({
-  url: "http://localhost:5000/graphql",
+  url: "https://build-with-ai-be.herokuapp.com/graphql",
 });
 
 function App() {
