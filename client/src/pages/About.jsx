@@ -34,7 +34,7 @@ const data = [
   },
   {
     id: 4,
-    name: "Tung Le",
+    name: "Anh Le",
     role: "Data Analyst",
     image:
       "https://avatars.dicebear.com/api/male/john.svg?mood[]=happy&mood[]=sad",
